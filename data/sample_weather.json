@@ -1,0 +1,9 @@
+{
+  "main": {
+    "temp": 303.15,
+    "humidity": 55
+  },
+  "wind": {
+    "speed": 4.5
+  }
+}
