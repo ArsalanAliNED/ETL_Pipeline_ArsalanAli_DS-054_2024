@@ -1,0 +1,9 @@
+pandas
+numpy
+requests
+gspread
+oauth2client
+pymongo
+pytest
+fpdf
+schedule
