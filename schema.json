@@ -1,0 +1,20 @@
+{
+  "columns": {
+    "Region": "object",
+    "Crop": "object",
+    "Production": "float64",
+    "Area Harvested": "float64",
+    "Yield": "float64",
+    "Fertilizer Used (kg/ha)": "int64",
+    "Irrigation": "int64",
+    "Farming_Intensity": "float64",
+    "NDVI": "float64",
+    "Soil_Moisture": "float64",
+    "Price_USD": "float64",
+    "Temperature_C": "float64",
+    "Humidity": "int64",
+    "Wind_Speed": "float64",
+    "Weather_Impact_Score": "float64",
+    "Profitability": "float64"
+  }
+}
