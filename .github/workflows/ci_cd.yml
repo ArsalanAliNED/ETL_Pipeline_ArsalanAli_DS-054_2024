@@ -1,0 +1,35 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-etl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Unit Tests
+      run: |
+        pytest test_etl.py
+
+    - name: Validate Output Schema
+      run: |
+        python validate_schema.py
+
+    - name: Run ETL Pipeline
+      run: |
+        python etl_pipeline.py
